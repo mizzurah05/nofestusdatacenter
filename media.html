@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Coverage - Festus Data Center</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f5;
+            --text-color: #18181b;
+            --card-bg: #ffffff;
+            --border-color: #e4e4e7;
+            --accent-color: #ef4444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1e1e24;
+            color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #a1a1aa;
+            font-size: 1.1rem;
+        }
+
+        /* Updated Navigation */
+        nav {
+            background-color: #27272a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f4f4f5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .card h2 {
+            color: var(--accent-color);
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        /* Article Link Formatting */
+        .media-item {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .media-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .media-meta {
+            font-size: 0.85rem;
+            color: #71717a;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+        }
+
+        .media-title {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        .media-title a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .media-title a:hover {
+            color: var(--accent-color);
+        }
+
+        .media-desc {
+            font-size: 0.95rem;
+            color: #52525b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #71717a;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Festus Data Center Watch</h1>
+        <p>Tracking the backroom deals, political fallout, and local impacts of the $6B project.</p>
+    </header>
+
+    <!-- NEW NAVIGATION INCLUDES MEDIA LINK -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="timeline.html">Full Timeline</a>
+        <a href="media.html">Media Coverage</a>
+    </nav>
+
+    <main>
+        
+        <section class="card">
+            <h2>National Coverage</h2>
+            
+            <div class="media-item">
+                <div class="media-meta">NPR / Politico &bull; April 2026</div>
+                <h3 class="media-title"><a href="#" target="_blank">Historic Election Flip: How a Small Town Ousted an Entire City Council Over a Data Center</a></h3>
+                <p class="media-desc">National spotlight on the unprecedented April elections where Festus residents systematically voted out every incumbent who supported the CRG project.</p>
+            </div>
+            
+        </section>
+
+        <section class="card">
+            <h2>Local & Regional Reporting</h2>
+            
+            <div class="media-item">
+                <div class="media-meta">Local News Outlet &bull; June 2026</div>
+                <h3 class="media-title"><a href="#" target="_blank">Festus City Council Blocks Citizen Recall Efforts</a></h3>
+                <p class="media-desc">Coverage of the controversial city council maneuver to block the citizen-led recall petitions from reaching the ballot box.</p>
+            </div>
+
+            <div class="media-item">
+                <div class="media-meta">Local News Outlet &bull; April 2026</div>
+                <h3 class="media-title"><a href="#" target="_blank">Residents File Sunshine Law Lawsuit Against City of Festus</a></h3>
+                <p class="media-desc">Details on the lawsuit alleging officials conducted illegal closed-door meetings and text-message coordination with developers prior to rezoning.</p>
+            </div>
+            
+            <div class="media-item">
+                <div class="media-meta">Local News Outlet &bull; March 2026</div>
+                <h3 class="media-title"><a href="#" target="_blank">Hundreds Pack High School Gym for Heated Data Center Vote</a></h3>
+                <p class="media-desc">Reporting from the March 30th showdown where the council voted 6-2 to approve the development agreement despite overwhelming public opposition.</p>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Independent local reporting &bull; Festus, Missouri</p>
+    </footer>
+
+</body>
+</html>
