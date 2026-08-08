@@ -29,6 +29,29 @@
             min-height: 100vh;
         }
 
+        /* Top Horizontal Nav Style matched from Index */
+        .top-nav {
+            background-color: #27272a;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 300px;
+            width: calc(100% - 300px);
+            z-index: 100;
+        }
+
+        .top-nav a {
+            color: #f4f4f5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .top-nav a:hover {
+            color: var(--accent-color);
+        }
+
         /* Left Sidebar Layout */
         aside {
             width: 300px;
@@ -41,6 +64,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            z-index: 101;
         }
 
         aside h1 {
@@ -54,25 +78,6 @@
             color: #a1a1aa;
             margin-bottom: 25px;
             line-height: 1.4;
-        }
-
-        .site-nav {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .site-nav a {
-            color: #f4f4f5;
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-            margin-bottom: 8px;
-            font-size: 0.95rem;
-        }
-
-        .site-nav a:hover {
-            color: var(--accent-color);
         }
 
         .nav-links {
@@ -102,6 +107,7 @@
         /* Right Content Area */
         main {
             margin-left: 300px;
+            margin-top: 60px; /* Offset for top nav */
             padding: 60px 40px;
             max-width: 900px;
             width: calc(100% - 300px);
@@ -114,7 +120,7 @@
             padding: 30px;
             margin-bottom: 30px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            scroll-margin-top: 40px;
+            scroll-margin-top: 100px; /* Offset for fixed top nav */
         }
 
         .timeline-section h2 {
@@ -149,8 +155,14 @@
                 width: 100%;
                 height: auto;
             }
+            .top-nav {
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
             main {
                 margin-left: 0;
+                margin-top: 0;
                 width: 100%;
                 padding: 20px;
             }
@@ -159,19 +171,19 @@
 </head>
 <body>
 
-    <!-- Left Sticky Navigation & Sidebar -->
+    <!-- Top Navigation Bar Matched to Index -->
+    <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="timeline.html">Full Timeline</a>
+        <a href="media.html">Media Coverage</a>
+    </nav>
+
+    <!-- Left Sticky Date Jump Navigation -->
     <aside>
         <div>
             <h1>Festus Data Center Timeline</h1>
             <p>The unvarnished record of the $6B data center fight, backroom deals, and citizen pushback.</p>
             
-            <!-- Site Pages Navigation Links -->
-            <div class="site-nav">
-                <a href="index.html">&larr; Back to Home</a>
-                <a href="media.html">View Media Coverage &rarr;</a>
-            </div>
-
-            <!-- Timeline Jump Links -->
             <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #71717a; margin-bottom: 10px;">Jump to Date:</p>
             <ul class="nav-links">
                 <li><a href="#late-2025">Late 2025: Secret Deals</a></li>
