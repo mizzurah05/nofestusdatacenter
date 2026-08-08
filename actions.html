@@ -89,6 +89,43 @@
             color: #3f3f46;
         }
 
+        /* Donation Option Tiers */
+        .donation-tier {
+            background-color: #fafafa;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+        }
+
+        .donation-tier h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tier-best { border-left: 4px solid #10b981; }
+        .tier-better { border-left: 4px solid #3b82f6; }
+        .tier-good { border-left: 4px solid #f59e0b; }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
         /* Highlight Callout Box */
         .highlight-box {
             background-color: #fef2f2;
@@ -104,24 +141,7 @@
             font-size: 1.2rem;
         }
 
-        /* Action Buttons */
-        .btn {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 10px;
-            transition: opacity 0.2s;
-        }
-
-        .btn:hover {
-            opacity: 0.9;
-        }
-
-        /* Meeting Schedule Table/List */
+        /* Meeting Schedule List */
         .meeting-list {
             list-style: none;
         }
@@ -175,11 +195,27 @@
         <!-- Legal Fund Section -->
         <section class="card">
             <h2>Support the Legal Defense Fund</h2>
-            <p>Community members and property owners are actively fighting back through formal legal channels, including the ongoing St. Louis County Sunshine Law lawsuit against the City of Festus and developer CRG.</p>
-            <p>Fighting corporate legal teams requires significant resources. Please consider contributing directly to support the legal battles protecting our community.</p>
-            
-            <div style="text-align: center; margin-top: 25px;">
-                <a href="https://www.nofestusdatacenter.com" target="_blank" class="btn">Donate to Wake Up JeffCo Legal Fund &rarr;</a>
+            <p>Community members and property owners are actively fighting back through formal legal channels, including the ongoing St. Louis County Sunshine Law lawsuit against the City of Festus and developer CRG. Fighting corporate legal teams requires significant resources.</p>
+            <p>If you would like to help cover legal fees, here are the best ways to contribute:</p>
+
+            <!-- Best Option -->
+            <div class="donation-tier tier-best">
+                <h3 style="color: #047857;">Best: Direct Bank Deposit</h3>
+                <p style="margin-bottom: 5px;">Make a direct deposit into the <strong>Wake Up JeffCo, LLC</strong> account at any branch of <strong>First State Community Bank</strong> to bypass all third-party processing fees.</p>
+            </div>
+
+            <!-- Better Option -->
+            <div class="donation-tier tier-better">
+                <h3 style="color: #1d4ed8;">Better: Venmo</h3>
+                <p style="margin-bottom: 5px;">Send contributions directly via Venmo to Lori Merriman:</p>
+                <p style="font-family: monospace; font-size: 1.1rem; font-weight: bold; color: var(--text-color);">@LorimMerriman70</p>
+            </div>
+
+            <!-- Good Option -->
+            <div class="donation-tier tier-good">
+                <h3 style="color: #b45309;">Good: GoFundMe Campaign</h3>
+                <p style="margin-bottom: 10px;">Contribute securely online through the official community fundraising campaign.</p>
+                <a href="https://www.gofundme.com/f/support-wake-up-jeffco-protect-our-community?ts=1771695433" target="_blank" class="btn" style="background-color: #2563eb;">Open GoFundMe Page &rarr;</a>
             </div>
         </section>
 
