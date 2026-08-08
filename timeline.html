@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fight Against the Festus Data Center</title>
+    <title>Timeline - Festus Data Center</title>
     <style>
         :root {
             --bg-color: #f4f4f5;
@@ -52,22 +52,41 @@
         aside p {
             font-size: 0.9rem;
             color: #a1a1aa;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             line-height: 1.4;
+        }
+
+        .site-nav {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .site-nav a {
+            color: #f4f4f5;
+            text-decoration: none;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .site-nav a:hover {
+            color: var(--accent-color);
         }
 
         .nav-links {
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
         }
 
         .nav-links a {
             color: #d4d4d8;
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             padding: 8px 12px;
             border-radius: 6px;
             transition: all 0.2s ease-in-out;
@@ -120,7 +139,7 @@
             color: var(--text-color);
         }
 
-        /* Mobile Responsiveness: Stack if screen is small */
+        /* Mobile Responsiveness */
         @media (max-width: 768px) {
             body {
                 flex-direction: column;
@@ -140,12 +159,20 @@
 </head>
 <body>
 
-    <!-- Left Sticky Navigation -->
+    <!-- Left Sticky Navigation & Sidebar -->
     <aside>
         <div>
             <h1>Festus Data Center Timeline</h1>
             <p>The unvarnished record of the $6B data center fight, backroom deals, and citizen pushback.</p>
             
+            <!-- Site Pages Navigation Links -->
+            <div class="site-nav">
+                <a href="index.html">&larr; Back to Home</a>
+                <a href="media.html">View Media Coverage &rarr;</a>
+            </div>
+
+            <!-- Timeline Jump Links -->
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #71717a; margin-bottom: 10px;">Jump to Date:</p>
             <ul class="nav-links">
                 <li><a href="#late-2025">Late 2025: Secret Deals</a></li>
                 <li><a href="#march-2026">March 2026: The Showdown</a></li>
@@ -153,7 +180,7 @@
                 <li><a href="#june-2026">June 2026: Blocked Recalls</a></li>
             </ul>
         </div>
-        <div style="font-size: 0.8rem; color: #71717a;">
+        <div style="font-size: 0.8rem; color: #71717a; margin-top: 30px;">
             Independent local reporting.
         </div>
     </aside>
