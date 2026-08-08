@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Can I Do? - Festus Data Center Watch</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f5;
+            --text-color: #18181b;
+            --card-bg: #ffffff;
+            --border-color: #e4e4e7;
+            --accent-color: #ef4444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1e1e24;
+            color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #a1a1aa;
+            font-size: 1.1rem;
+        }
+
+        /* Top Horizontal Nav */
+        nav {
+            background-color: #27272a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f4f4f5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .card h2 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+            color: #3f3f46;
+        }
+
+        /* Highlight Callout Box */
+        .highlight-box {
+            background-color: #fef2f2;
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--accent-color);
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        /* Action Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Meeting Schedule Table/List */
+        .meeting-list {
+            list-style: none;
+        }
+
+        .meeting-item {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .meeting-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .meeting-date {
+            font-weight: bold;
+            color: var(--text-color);
+            font-size: 1.1rem;
+        }
+
+        .meeting-details {
+            font-size: 0.95rem;
+            color: #52525b;
+            margin-top: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #71717a;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Festus Data Center Watch</h1>
+        <p>Take action, stay informed, and hold local leadership accountable.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="timeline.html">Full Timeline</a>
+        <a href="media.html">Media Coverage</a>
+        <a href="actions.html">What Can I Do?</a>
+    </nav>
+
+    <main>
+        
+        <!-- Legal Fund Section -->
+        <section class="card">
+            <h2>Support the Legal Defense Fund</h2>
+            <p>Community members and property owners are actively fighting back through formal legal channels, including the ongoing St. Louis County Sunshine Law lawsuit against the City of Festus and developer CRG.</p>
+            <p>Fighting corporate legal teams requires significant resources. Please consider contributing directly to support the legal battles protecting our community.</p>
+            
+            <div style="text-align: center; margin-top: 25px;">
+                <a href="https://www.wakeupjeffco.com" target="_blank" class="btn">Donate to Wake Up JeffCo Legal Fund &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Why Showing Up Matters -->
+        <section class="card">
+            <h2>Why Showing Up Matters</h2>
+            <p>Backroom deals happen when leadership thinks nobody is watching. Packed rooms, standing-room-only crowds, and relentless public comments are the exact tools that put national pressure on officials and forced accountability.</p>
+            
+            <div class="highlight-box">
+                <h3>Keep the Pressure On</h3>
+                <p>Even after historic municipal election upsets, remaining officials and corporate interests count on community fatigue. Showing up to meetings proves that residents are paying close attention to every vote, resolution, and closed-door discussion.</p>
+            </div>
+        </section>
+
+        <!-- Upcoming Meetings -->
+        <section class="card">
+            <h2>Upcoming City Council Meetings</h2>
+            <p>Mark your calendar and plan to attend upcoming sessions. Check local notices for exact times, agendas, and locations.</p>
+            
+            <ul class="meeting-list">
+                <li class="meeting-item">
+                    <div class="meeting-date">Next Regularly Scheduled City Council Meeting</div>
+                    <div class="meeting-details">Check the official <a href="https://www.cityoffestus.org/" target="_blank">Festus City Website</a> for the latest agenda posting and packet releases before attending.</div>
+                </li>
+                <li class="meeting-item">
+                    <div class="meeting-date">Work Sessions & Public Hearings</div>
+                    <div class="meeting-details">Watch local notices and community networks for special session announcements regarding zoning updates, development concessions, or legal updates.</div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Independent local reporting &bull; Festus, Missouri</p>
+    </footer>
+
+</body>
+</html>
