@@ -172,12 +172,7 @@
 <body>
 
     <!-- Top Navigation Bar Matched to Index -->
-    <nav class="top-nav">
-        <a href="index.html">Home</a>
-        <a href="timeline.html">Full Timeline</a>
-        <a href="media.html">Media Coverage</a>
-        <a href="actions.html">What Can I Do?</a
-    </nav>
+    <nav id="main-nav"></nav>
 
     <!-- Left Sticky Date Jump Navigation -->
     <aside>
@@ -233,6 +228,13 @@
             </ul>
         </section>
     </main>
+    <script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('main-nav').innerHTML = data;
+        });
+</script>
 
 </body>
 </html>
