@@ -139,12 +139,7 @@
         <p>Tracking the backroom deals, political fallout, and local impacts of the $6B project.</p>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="timeline.html">Full Timeline</a>
-        <a href="media.html">Media Coverage</a>
-        <a href="actions.html">What Can I Do?</a
-    </nav>
+    <nav id="main-nav"></nav>
 
     <main>
         
@@ -217,6 +212,13 @@
     <footer>
         <p>Independent local reporting &bull; Festus, Missouri</p>
     </footer>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('main-nav').innerHTML = data;
+            });
+    </script>
 
 </body>
 </html>
